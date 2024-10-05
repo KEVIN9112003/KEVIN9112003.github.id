@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>My Profile</title>
+</head>
+
+<body>
+    <center>
+        <img src="WhatsApp Image 2024-10-05 at 13.22.48.jpeg" style="width:200px;height:200px;border-radius: 100%;"></img>
+        <p><b><u>Kevin Ramadhan</u></b></p>
+        <p><b><u>1202220260</u></b></p>
+        <p><b><u>S1 Sistem Informasi</u></b></p>
+        <p><i>SI-46-04</i></p>
+        <p1>
+            <a href="https://www.linkedin.com/in/kevin-ramadhan-166116330/" target="_blank">
+                <img src="LinkedIn_logo_initials.png" style="width:64px;height:64px;">
+
+            </a>
+
+        </p1>
+        <p1>
+            <a href="https://www.instagram.com/vinnrmdhnnn/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width:64px;height:64px;">
+            </a>
+        </p1>
+        <p1>
+            <a href="https://github.com/KEVIN9112003" target="_blank">
+                <img src="github-logo-7880D80B8D-seeklogo.com.png" style="width:64px;height:64px;">
+            </a>
+        </p1>
+    </center>
+</body>
+
+<body onload="displayDateTime()">
+    <h2 align="right">Tanggal: <span id="date"></span></h2>
+    <h2 align="right">Waktu: <span id="time"></span></h2>
+    </style>
+</body>
+
+<script>
+    function displayDateTime() {
+        var now = new Date();
+        var date = now.toLocaleDateString();
+        var time = now.toLocaleTimeString();
+
+        document.getElementById("date").innerHTML = date;
+        document.getElementById("time").innerHTML = time;
+    }
+    setInterval(displayDateTime, 1000);
+</script>
+
+
+</html>
